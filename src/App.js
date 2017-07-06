@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import Header from './Header.js';
+import About from './About.js';
 import './App.css';
+import './transport-font/styles.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+      <div className="App" style={{ background: '#3CB76F'}}>
+        <Header />
+        <div className="p3">
+          <a className="caps text-decoration-none center p2" style={{ width: '100%', background: 'white' }} href="http://eepurl.com/cVc6cj">Get notified</a>
+          <p className="caps" style={{ color: 'white', fontSize: '11.8px' }}>when the game is released</p>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <About />
       </div>
     );
   }
