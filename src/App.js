@@ -16,7 +16,7 @@ class App extends Component {
           <h4 className="caps mt3">when the game is released</h4>
         </div>
         <About />
-        <div>
+        <div className="mb3">
 
         </div>
       </div>
